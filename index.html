@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ApexPlanet Internship | Task 1 - Web Basics</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Background Gradient Spheres for Modern Glow Effect -->
+    <div class="glow-bg"></div>
+
+    <div class="main-wrapper">
+        <!-- Hero Section Card -->
+        <main class="hero-card">
+            <header class="card-header">
+                <span class="badge"><i class="fa-solid fa-code"></i> Task 01</span>
+                <h1>Basics of <span>Web Development</span></h1>
+                <h2>Crafting modern web interfaces with HTML, CSS & JavaScript</h2>
+            </header>
+
+            <div class="card-body">
+                <p class="description">
+                    Welcome to my Task-1 submission for the <strong>ApexPlanet Internship Program</strong>. 
+                    This project demonstrates the core foundational concepts of semantic HTML, responsive modern styling, and lightweight DOM interaction.
+                </p>
+
+                <!-- Featured Image Container with Glassmorphism Overlay -->
+                <div class="image-wrapper">
+                    <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1000&q=80" alt="Developer Workspace" class="hero-img">
+                    <div class="img-overlay">
+                        <span><i class="fa-solid fa-layer-group"></i> Clean UI Design</span>
+                    </div>
+                </div>
+
+                <!-- Links Section -->
+                <div class="links-group">
+                    <a href="https://apexplanet.in" target="_blank" rel="noopener noreferrer" class="link-btn portal-link">
+                        <i class="fa-solid fa-globe"></i> Visit ApexPlanet
+                    </a>
+                    <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="link-btn github-link">
+                        <i class="fa-brands fa-github"></i> GitHub Repo
+                    </a>
+                </div>
+            </div>
+
+            <!-- Footer Action -->
+            <footer class="card-footer">
+                <button id="alertBtn" class="action-btn">
+                    <span>Trigger Interaction</span>
+                    <i class="fa-solid fa-bolt"></i>
+                </button>
+            </footer>
+        </main>
+    </div>
+
+    <!-- Custom Modal for Professional Alert replacement -->
+    <div id="customModal" class="modal-overlay">
+        <div class="modal-content">
+            <div class="modal-icon">
+                <i class="fa-solid fa-circle-check"></i>
+            </div>
+            <h3>Interaction Successful!</h3>
+            <p>You have successfully triggered the JavaScript event for Task 1.</p>
+            <button id="closeModalBtn" class="close-btn">Awesome!</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
